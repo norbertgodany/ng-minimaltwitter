@@ -87,6 +87,7 @@ GEM
     equalizer (0.0.11)
     erubi (1.10.0)
     execjs (2.7.0)
+    ffi (1.15.0)
     ffi (1.15.0-x64-mingw32)
     ffi-compiler (1.0.1)
       ffi (>= 1.0.0)
@@ -127,6 +128,8 @@ GEM
     nio4r (2.5.7)
     nokogiri (1.11.3-x64-mingw32)
       racc (~> 1.4)
+    nokogiri (1.11.3-x86_64-linux)
+      racc (~> 1.4)
     oauth (0.5.6)
     omniauth (2.0.4)
       hashie (>= 3.4.6)
@@ -138,9 +141,11 @@ GEM
     omniauth-twitter (1.4.0)
       omniauth-oauth (~> 1.1)
       rack
+    pg (1.2.3)
     pg (1.2.3-x64-mingw32)
     public_suffix (4.0.6)
-    puma (3.12.6)
+    puma (4.3.8)
+      nio4r (~> 2.0)
     racc (1.5.2)
     rack (2.2.3)
     rack-protection (2.1.0)
@@ -225,6 +230,7 @@ GEM
       execjs (>= 0.3.0, < 3)
     unf (0.1.4)
       unf_ext
+    unf_ext (0.0.7.7)
     unf_ext (0.0.7.7-x64-mingw32)
     web-console (3.7.0)
       actionview (>= 5.0)
@@ -239,6 +245,7 @@ GEM
 
 PLATFORMS
   x64-mingw32
+  x86_64-linux
 
 DEPENDENCIES
   bootsnap (>= 1.1.0)
@@ -251,7 +258,7 @@ DEPENDENCIES
   omniauth
   omniauth-twitter
   pg
-  puma (~> 3.11)
+  puma (~> 4.3)
   rails (~> 5.2.2)
   rinku
   sass-rails (~> 5.0)
